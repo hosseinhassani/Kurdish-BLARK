@@ -28,10 +28,8 @@ def buildWeightingList(inputFile, dialect, outputFile):
 
     import getVocabList
 
-    # os.chdir("/home/hossein/w4u")
+    # os.chdir("/...")
 
-    # infile = codecs.open('LSorani5.txt', encoding = 'utf-8')
-    # infile = codecs.open(inputFile, encoding = 'utf-8')
     infile = codecs.open(inputFile, 'r', encoding = 'utf-8')
     inputText = infile.read()
     infile.close()
@@ -54,7 +52,6 @@ def buildWeightingList(inputFile, dialect, outputFile):
     sanitizedText1 = tregex.sub(' ', inputText) # remove special and non-aplha chars
     sanitizedText = re.sub(' +', ' ', sanitizedText1) # remove excessive spaces 
 
-    #print sanitizedText
 
     words = re.split(r' ', sanitizedText)
 
@@ -81,7 +78,6 @@ def buildWeightingList(inputFile, dialect, outputFile):
         if (len(w) >= 2):
             for node in weightingList:
                 itemNo, vocab, kurmanjiWeight, soraniWeight = node.split()
-#                print(itemNo)
                 if (w == vocab):
                     if (dialect == 'Kurmanji'):
                         newWeightingList.append(u'{: <25}\t{: <4}\t{: <4}'.format(w, 100, soraniWeight))
