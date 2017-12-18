@@ -19,7 +19,7 @@ def commonKuSoVocab():
 
     import getVocabList
 
-    # os.chdir("/home/hossein/w4u")
+    # os.chdir("/...")
 
 
     newWeightingList = []
