@@ -1,3 +1,4 @@
 This folder includes different Kurdish data as follows:
 KNM - Includes Kurdish names which have been used in Kurdish Proper Noun recognition.
 KNMA - Includes Arabic names popular in Kurdish which have been used in Kurdish Proper Noun recognition
+KurmanjiSoraniWeighting - A list of vcabulary which have been attributed to Kurmanji, Sorani, or bot by assigning 0 or 100
