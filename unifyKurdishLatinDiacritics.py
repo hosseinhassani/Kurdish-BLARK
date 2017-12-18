@@ -33,13 +33,11 @@ def UnifyKurdishLatinDiacritics(inputFile):
 
     f = codecs.open(inputFile, encoding='utf-8')
     originalText = f.read()
-#    print originalText
     f.close()
 
 
     convertedText = replace_all(originalText, diacriticsDic)
      
-#    print convertedText
 
     o = codecs.open(inputFile, 'w', encoding='utf-8')
     o.write(convertedText);
